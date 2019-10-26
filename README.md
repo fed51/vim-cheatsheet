@@ -20,12 +20,15 @@ This cheat sheet assumes that the reader alreading has a basic understanding of 
 
 ### .vimrc Magic
 
+**Change Detection**
 Check if file has been changed externally and reload into buffer:
 `au FocusGained,BufEnter * :silent! checktime`
 
+**Auto-Save**
 Auto-save on window focus is lost:
 `au FocusLost,WinLeave * :silent! w`
 
+**Mouse Functionality**
 Enable mouse interactivity:
 `set mouse=a`
 
@@ -40,6 +43,7 @@ h|all previous modes when editing a help file
 a|all previous modes
 r|for hit-enter and more-prompt prompt
 
+**Pane Size Constraint**
 Automatically resize panes proportionately when terminal window size changes:
 `au VimResized * wincmd =`
 
@@ -51,57 +55,51 @@ Use the following command to list all buffers.
 
 `:buffers`
 
-Example Output of :buffers
+Example Output of `:buffers`:
 
     1 #a   "MyFile.txt"                   line 5
     3 %a   "Some_Other_File.txt"          line 1
     4 #  + "~/.vimrc"                     line 28
     5  a   "~/plain_text_passwords.lol"   line 7
 
+* Column 1
+  * Buffer number.
+* Column 2
+  * The currently focused buffer is marked by `%`.  A buffer marked with `#` is a little trickier... I'll get back to on that one.
+  * Indicates if the file is active (displayed on screen) and is denoted with "a".  
+* Column 3
+  * This column will display a `+` if there are any unwritten changes in that buffer.
+* Column 4
+  * Filename.
+* Column 5
+  * Line number where the cursor is located in that buffer.
 
-The first column shows the buffer number.
+#### Delete Buffers
 
-The second column will indicate if the file is active (displayed on screen) and is denoted with "a".  
-The currently focused buffer is marked by `%`.  A buffer marked with `#` is a little trickier... I'll get back to on that one.
+You will not want to use `:q` when working with multiple files as it will exit VIM entirely.
 
-The third column will show a `+` if there are any unwritten changes in that buffer.
+Instead, you can manage buffers with a couple of commands.
 
-The fourth column is filename of course.
-
-The fifth column indicates the line number where the cursor is located in that buffer.
-
-
-#### Delete Buffers 
-You will not want to use `:q` when working with multiple files as it will exit VIM entirely. Instead, you can manage buffers with a couple of commands.
-
-Delete Current buffer
-
+Delete Current buffer:
 `:bdelete`
 
-or 
-
+or:
 `:bd`
 
 #### Delete Other Buffers
 
 **Deleting a Single Buffer**
-
-Enter the `:bd` command and the buffer number of the buffer to be deleted. Alternative, start typing the name of the file in the target buffer and use tab completion to finish the filename.
+Enter the `:bd` command and the buffer number of the buffer to be deleted.
+Alternative, start typing the name of the file in the target buffer and use tab completion to finish the filename.
 ```
 :bd [<buffer number>|<file.name>]
 ```
 
-
 **Deleting Multiple Buffers**
-
-To delete multiple buffers at once, append an "!" to the end of the `:bd` command.
-
+To delete multiple buffers at once, append an "!" to the end of the `:bd` command:
 `:bd! <buffer 1> <buffer 2> ...`
 
-
-
 #### Switch Buffers
-
 ```
 ```
 
