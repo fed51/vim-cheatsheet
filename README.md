@@ -2,9 +2,7 @@
 
 ## Table of Contents
 
-1. [VIM Cheat Sheet](#vim-cheat-sheet)
-    1. [Table of Contents](#table-of-contents)
-    1. [.vimrc Magic](#vimrc-magic)
+1. [.vimrc Magic](#vimrc-magic)
 1. [Buffers](#buffers)
     1. [List all open buffers](#list-all-open-buffers)
     1. [Delete Buffers](#delete-buffers)
