@@ -4,6 +4,8 @@
 
 This cheat sheet assumes that the reader alreading has a basic understanding of how to open, edit, save, and exit, VIM.
 
+This guide is a work-in-progress and I will be adding to it over time.
+
 ## Table of Contents
 
 1. [.vimrc Magic](#vimrc-magic)
@@ -105,4 +107,3 @@ Alternative, start typing the name of the file in the target buffer and use tab 
 To delete multiple buffers at once, append an "!" to the end of the `:bd` command:
 
 `:bd! <buffer 1> <buffer 2> ...`
-
