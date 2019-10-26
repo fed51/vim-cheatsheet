@@ -1,69 +1,64 @@
 # VIM Cheat Sheet
 
+## For New VIM Enthusiasts
+
+This cheat sheet assumes that the reader alreading has a basic understanding of how to open, edit, save, and exit, VIM.
+
 ## Table of Contents
 
-1. [VIM Cheat Sheet](#vim-cheat-sheet)
-   1. [Table of Contents](#table-of-contents)
-2. [.vimrc Magic](#vimrc-magic)
-3. [Buffers](#buffers)
+1. [.vimrc Magic](#vimrc-magic)
+1. [Buffers](#buffers)
    1. [List all open buffers](#list-all-open-buffers)
-   2. [Delete Buffers](#delete-buffers)
-   3. [Delete Other Buffers](#delete-other-buffers)
-   4. [Switch Buffers](#switch-buffers)
-4. [Split Panes](#split-panes)
-5. [Visual Mode](#visual-mode)
-6. [Search and Replace](#search-and-replace)
-7. [Diff](#diff)
-8. [Copy and Paste](#copy-and-paste)
+   1. [Delete Buffers](#delete-buffers)
+   1. [Delete Other Buffers](#delete-other-buffers)
+   1. [Switch Buffers](#switch-buffers)
+1. [Split Panes](#split-panes)
+1. [Visual Mode](#visual-mode)
+1. [Search and Replace](#search-and-replace)
+1. [Diff](#diff)
+1. [Copy and Paste](#copy-and-paste)
 
+### .vimrc Magic
 
-# .vimrc Magic
-
-Check if file has been changed externally and reload into buffer
-
+Check if file has been changed externally and reload into buffer:
 `au FocusGained,BufEnter * :silent! checktime`
 
-
-Auto-save on window focus is lost
-
+Auto-save on window focus is lost:
 `au FocusLost,WinLeave * :silent! w`
 
-
-Enable mouse interactivity
-
+Enable mouse interactivity:
 `set mouse=a`
 
-The mouse can be enabled for different modes: 
-n        Normal mode and Terminal modes
-v        Visual mode 
-i         Insert mode
-c        Command-line mode
-h        all previous modes when editing a help file
-a        all previous modes
-r        for hit-enter and more-prompt prompt
+The mouse can be enabled for different modes:
+Value|description
+-----|-----------
+n|Normal mode and Terminal modes
+v|Visual mode
+i|Insert mode
+c|Command-line mode
+h|all previous modes when editing a help file
+a|all previous modes
+r|for hit-enter and more-prompt prompt
 
-
-Automatically resize panes proportionately when terminal window size changes
-
+Automatically resize panes proportionately when terminal window size changes:
 `au VimResized * wincmd =`
 
+### Buffers
 
-
-# Buffers
-
-## List all open buffers
+#### List all open buffers
 
 Use the following command to list all buffers.
 
 `:buffers`
 
 Example Output of :buffers
-```
-  1 #a   "MyFile.txt"                   line 5
-  3 %a   "Some_Other_File.txt"          line 1
-  4 #  + "~/.vimrc"                     line 28
-  5  a   "~/plain_text_passwords.lol"   line 7
-```
+
+    1 #a   "MyFile.txt"                   line 5
+    3 %a   "Some_Other_File.txt"          line 1
+    4 #  + "~/.vimrc"                     line 28
+    5  a   "~/plain_text_passwords.lol"   line 7
+
+
 The first column shows the buffer number.
 
 The second column will indicate if the file is active (displayed on screen) and is denoted with "a".  
@@ -76,7 +71,7 @@ The fourth column is filename of course.
 The fifth column indicates the line number where the cursor is located in that buffer.
 
 
-## Delete Buffers 
+#### Delete Buffers 
 You will not want to use `:q` when working with multiple files as it will exit VIM entirely. Instead, you can manage buffers with a couple of commands.
 
 Delete Current buffer
@@ -87,7 +82,7 @@ or
 
 `:bd`
 
-## Delete Other Buffers
+#### Delete Other Buffers
 
 **Deleting a Single Buffer**
 
@@ -105,36 +100,36 @@ To delete multiple buffers at once, append an "!" to the end of the `:bd` comman
 
 
 
-## Switch Buffers
+#### Switch Buffers
 
 ```
 ```
 
 
-# Split Panes
+### Split Panes
 
 ```
 ```
 
 
-# Visual Mode
+### Visual Mode
 
 ```
 ```
 
 
-# Search and Replace
+### Search and Replace
 
 ```
 ```
 
 
-# Diff
+### Diff
 
 ```
 ```
 
-# Copy and Paste
+### Copy and Paste
 
 ```
 ```
