@@ -15,18 +15,25 @@ This cheat sheet assumes that the reader alreading has a basic understanding of 
 ### .vimrc Magic
 
 **Change Detection**
+
 Check if file has been changed externally and reload into buffer:
+
 `au FocusGained,BufEnter * :silent! checktime`
 
 **Auto-Save**
+
 Auto-save on window focus is lost:
+
 `au FocusLost,WinLeave * :silent! w`
 
 **Mouse Functionality**
+
 Enable mouse interactivity:
+
 `set mouse=a`
 
 The mouse can be enabled for different modes:
+
 Value|description
 -----|-----------
 n|Normal mode and Terminal modes
@@ -38,7 +45,9 @@ a|all previous modes
 r|for hit-enter and more-prompt prompt
 
 **Pane Size Constraint**
+
 Automatically resize panes proportionately when terminal window size changes:
+
 `au VimResized * wincmd =`
 
 ### Buffers
@@ -75,21 +84,25 @@ You will not want to use `:q` when working with multiple files as it will exit V
 Instead, you can manage buffers with a couple of commands.
 
 Delete Current buffer:
+
 `:bdelete`
 
 or:
+
 `:bd`
 
 #### Delete Other Buffers
 
 **Deleting a Single Buffer**
+
 Enter the `:bd` command and the buffer number of the buffer to be deleted.
 Alternative, start typing the name of the file in the target buffer and use tab completion to finish the filename.
-```
-:bd [<buffer number>|<file.name>]
-```
+
+`:bd [<buffer number>|<file.name>]`
 
 **Deleting Multiple Buffers**
+
 To delete multiple buffers at once, append an "!" to the end of the `:bd` command:
+
 `:bd! <buffer 1> <buffer 2> ...`
 
