@@ -1,6 +1,22 @@
 # VIM Cheat Sheet
 
-## .vimrc magic
+## Table of Contents
+
+1. [VIM Cheat Sheet](#vim-cheat-sheet)
+    1. [Table of Contents](#table-of-contents)
+    1. [.vimrc Magic](#vimrc-magic)
+1. [Buffers](#buffers)
+    1. [List all open buffers](#list-all-open-buffers)
+    1. [Delete Buffers](#delete-buffers)
+    1. [Delete Other Buffers](#delete-other-buffers)
+1. [Split Panes](#split-panes)
+1. [Visual Mode](#visual-mode)
+1. [Search and Replace](#search-and-replace)
+1. [Diff](#diff)
+1. [Copy and Paste](#copy-and-paste)
+
+
+## .vimrc Magic
 
 Check if file has been changed externally and reload into buffer
 
