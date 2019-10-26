@@ -90,29 +90,29 @@ or
 
 
 
-# Split Panes
+## Split Panes
 
 ```
 ```
 
 
-# Visual Mode
+## Visual Mode
 
 ```
 ```
 
 
-# Search and Replace
+## Search and Replace
 
 ```
 ```
 
 
-# Diff
+## Diff
 ```
 ```
 
-# Copy and Paste
+## Copy and Paste
 
 ```
 ```
