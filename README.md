@@ -61,8 +61,11 @@ The fifth column indicates the line number where the cursor is located in that b
 You will not want to use :q when working with multiple files as it will exit VIM entirely. Instead, you can manage buffers with a couple of commands.
 
 Delete Current buffer
+
 `:bdelete`
+
 or 
+
 `:bd`
 
 ## Delete Other Buffers
