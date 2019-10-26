@@ -59,6 +59,17 @@ Example Output of :buffers
   4 #  + "~/.vimrc"                     line 28
   5  a   "~/plain_text_passwords.lol"   line 7
 ```
+
+Example Output of :buffers
+------------------------------------------------|
+  1 #a   "MyFile.txt"                   line 5  | 
+  3 %a   "Some_Other_File.txt"          line 1  | 
+  4 #  + "~/.vimrc"                     line 28 |
+  5  a   "~/plain_text_passwords.lol"   line 7  |
+------------------------------------------------|
+
+
+
 The first column shows the buffer number.
 
 The second column will indicate if the file is active (displayed on screen) and is denoted with "a".  
