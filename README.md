@@ -14,7 +14,7 @@
 1. [Copy and Paste](#copy-and-paste)
 
 
-## .vimrc Magic
+# .vimrc Magic
 
 Check if file has been changed externally and reload into buffer
 
@@ -88,6 +88,9 @@ or
 ```
 
 
+## Switch Buffers
+```
+```
 
 
 ## Split Panes
