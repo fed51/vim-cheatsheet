@@ -62,11 +62,10 @@ Example Output of :buffers
 
 Example Output of :buffers
 ------------------------------------------------|
-  1 #a   "MyFile.txt"                   line 5  | 
-  3 %a   "Some_Other_File.txt"          line 1  | 
-  4 #  + "~/.vimrc"                     line 28 |
-  5  a   "~/plain_text_passwords.lol"   line 7  |
-------------------------------------------------|
+  1 #a   "MyFile.txt"                   line 5  
+  3 %a   "Some_Other_File.txt"          line 1  
+  4 #  + "~/.vimrc"                     line 28
+  5  a   "~/plain_text_passwords.lol"   line 7
 
 
 
