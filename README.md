@@ -11,12 +11,6 @@ This cheat sheet assumes that the reader alreading has a basic understanding of 
    1. [List all open buffers](#list-all-open-buffers)
    1. [Delete Buffers](#delete-buffers)
    1. [Delete Other Buffers](#delete-other-buffers)
-   1. [Switch Buffers](#switch-buffers)
-1. [Split Panes](#split-panes)
-1. [Visual Mode](#visual-mode)
-1. [Search and Replace](#search-and-replace)
-1. [Diff](#diff)
-1. [Copy and Paste](#copy-and-paste)
 
 ### .vimrc Magic
 
@@ -99,35 +93,3 @@ Alternative, start typing the name of the file in the target buffer and use tab 
 To delete multiple buffers at once, append an "!" to the end of the `:bd` command:
 `:bd! <buffer 1> <buffer 2> ...`
 
-#### Switch Buffers
-```
-```
-
-
-### Split Panes
-
-```
-```
-
-
-### Visual Mode
-
-```
-```
-
-
-### Search and Replace
-
-```
-```
-
-
-### Diff
-
-```
-```
-
-### Copy and Paste
-
-```
-```
