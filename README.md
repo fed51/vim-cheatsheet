@@ -10,25 +10,25 @@ This guide is a work-in-progress and I will be adding to it over time.
 
 1. [.vimrc Magic](#vimrc-magic)
 1. [Buffers](#buffers)
-   1. [List all open buffers](#list-all-open-buffers)
+   1. [Basics](#basics)
    1. [Delete Buffers](#delete-buffers)
    1. [Delete Other Buffers](#delete-other-buffers)
 
 ### .vimrc Magic
 
-**Change Detection**
+***Change Detection***
 
 Check if file has been changed externally and reload into buffer:
 
 `au FocusGained,BufEnter * :silent! checktime`
 
-**Auto-Save**
+***Auto-Save***
 
 Auto-save on window focus is lost:
 
 `au FocusLost,WinLeave * :silent! w`
 
-**Mouse Functionality**
+***Mouse Functionality***
 
 Enable mouse interactivity:
 
@@ -46,7 +46,7 @@ h|all previous modes when editing a help file
 a|all previous modes
 r|for hit-enter and more-prompt prompt
 
-**Pane Size Constraint**
+***Pane Size Constraint***
 
 Automatically resize panes proportionately when terminal window size changes:
 
@@ -54,7 +54,9 @@ Automatically resize panes proportionately when terminal window size changes:
 
 ### Buffers
 
-#### List all open buffers
+#### Basics
+
+***List all open buffers***
 
 Use the following command to list all buffers.
 
@@ -70,8 +72,9 @@ Example Output of `:buffers`:
 * Column 1
   * Buffer number.
 * Column 2
-  * The currently focused buffer is marked by `%`.  A buffer marked with `#` is a little trickier... I'll get back to on that one.
-  * Indicates if the file is active (displayed on screen) and is denoted with "a".  
+  * The current buffer is marked by `%`.
+  * An alternate buffer will be marked with `#`.
+  * Active buffers, or buffers that are displayed on screen, will be marked with an `a`.  
 * Column 3
   * This column will display a `+` if there are any unwritten changes in that buffer.
 * Column 4
@@ -80,6 +83,8 @@ Example Output of `:buffers`:
   * Line number where the cursor is located in that buffer.
 
 #### Delete Buffers
+
+***Delete Current Buffer***
 
 You will not want to use `:q` when working with multiple files as it will exit VIM entirely.
 
@@ -95,7 +100,7 @@ or:
 
 #### Delete Other Buffers
 
-**Deleting a Single Buffer**
+***Deleting a Single Buffer***
 
 Enter the `:bd` command and the buffer number of the buffer to be deleted.
 Alternative, start typing the name of the file in the target buffer and use tab completion to finish the filename.
