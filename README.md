@@ -1,5 +1,7 @@
 # VIM Cheat Sheet
 
+![I❤️VIM](images/I_heart_vim.png)
+
 ## For New VIM Enthusiasts
 
 This cheat sheet assumes that the reader alreading has a basic understanding of how to open, edit, save, and exit, VIM.
