@@ -1,6 +1,6 @@
 # VIM Cheat Sheet
 
-![I ❤️  VIM](images/I_heart_vim.png)
+![I❤️ VIM](images/I_heart_vim.png)
 
 ## For New VIM Enthusiasts
 
