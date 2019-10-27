@@ -38,15 +38,15 @@ Enable mouse interactivity:
 
 The mouse can be enabled for different modes:
 
-Value| |description
------|-|-----------
-n    | |Normal mode and Terminal modes
-v    | |Visual mode
-i    | |Insert mode
-c    | |Command-line mode
-h    | |all previous modes when editing a help file
-a    | |all previous modes
-r    | |for hit-enter and more-prompt prompt
+Value|description
+-----|------------
+n    |Normal mode and Terminal modes
+v    |Visual mode
+i    |Insert mode
+c    |Command-line mode
+h    |all previous modes when editing a help file
+a    |all previous modes
+r    |for hit-enter and more-prompt prompt
 
 ***Pane Size Constraint***
 
