@@ -27,25 +27,25 @@ This guide is a work-in-progress and I will be adding to it over time.
 
 This the default mode when opening Vim. Vim keyboard commands can be used in this mode to perform various tasks.
 
-You can return to *Normal* mode from other modes simple by pressing the *<ESC>* key.
+You can return to **Normal** mode from other modes simple by pressing the **ESC** key.
 
 ***Command Line Mode***
 
-Whenever you see instructions that supply a Vim comment that starts with *:* the you are working with a command line mode function.
+Whenever you see instructions that supply a Vim comment that starts with **:** the you are working with a command line mode function.
 
-Simply pressing *:* will enter you into *Command Line* mode, and information enter after it is the commant.
+Simply pressing **:** will enter you into *Command Line* mode, and information enter after it is the commant.
 
 ***Insert Mode***
 
 This mode is where files are modified.
 
-To enter *Insert Mode* press *i* or *<Insert>*.
+To enter **Insert Mode** press **i** or **Insert**.
 
 ***Visual Mode***
 
 This mode enables the ability to select lines and blocks of text.
 
-This mode is entered by pressing *v* for *Visual Mode* or *<ctrl>-v* to enter *Visual-Block Mode*.
+This mode is entered by pressing **v** for *Visual Mode* or **ctrl-v** to enter **Visual-Block Mode**.
 
 #### Saving and Exiting
 
