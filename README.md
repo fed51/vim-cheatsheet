@@ -52,20 +52,20 @@ This mode is entered by pressing **v** for *Visual Mode* or **ctrl-v** to enter 
 ***Saving***
 
 Command | Function
-------------------
-:w		|Save
-:wq / :x|Save and close file
-ZZ		|Save and quit
+--------|---------
+:w			|Save
+:wq / :x	|Save and close file
+ZZ			|Save and quit
 
 ***Exiting***
 
 Command | Function
 --------|---------
 :qa		|Close all files
-:qa!	|Close all files, abandon changes
-:q		|Close file
+:qa!		|Close all files, abandon changes
+:q			|Close file
 :q!		|Close file, abandon changes
-ZQ		|		Quit without checking changes
+ZQ			|		Quit without checking changes
 
 ### Buffers
 
