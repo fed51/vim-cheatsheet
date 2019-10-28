@@ -13,11 +13,12 @@ This guide is a work-in-progress and I will be adding to it over time.
 1. [VIM Basic For New Users](#vim-basic-for-new-users)
    1. [Modes](#modes)
    1. [Saving and Exiting](#saving-and-exiting)
-1. [.vimrc Magic](#vimrc-magic)
 1. [Buffers](#buffers)
    1. [Basics](#basics)
    1. [Delete Buffers](#delete-buffers)
    1. [Delete Other Buffers](#delete-other-buffers)
+1. [Advanced](#advanced)
+   1. [.vimrc Magic](#vimrc-magic)
 
 ### VIM Basic For New Users
 
@@ -27,45 +28,45 @@ This guide is a work-in-progress and I will be adding to it over time.
 
 This the default mode when opening Vim. Vim keyboard commands can be used in this mode to perform various tasks.
 
-You can return to **Normal** mode from other modes simple by pressing the **ESC** key.
+You can return to *Normal* mode from other modes simple by pressing the *<ESC>* key.
 
 ***Command Line Mode***
 
-Whenever you see instructions that supply a Vim comment that starts with **:** the you are working with a command line mode function.
+Whenever you see instructions that supply a Vim comment that starts with *:* the you are working with a command line mode function.
 
-Simply pressing **:** will enter you into *Command Line* mode, and information enter after it is the commant.
+Simply pressing *:* will enter you into *Command Line* mode, and information enter after it is the commant.
 
 ***Insert Mode***
 
 This mode is where files are modified.
 
-To enter **Insert Mode** press **i** or **Insert**.
+To enter *Insert Mode* press *i* or *<Insert>*.
 
 ***Visual Mode***
 
 This mode enables the ability to select lines and blocks of text.
 
-This mode is entered by pressing **v** for *Visual Mode* or **ctrl-v** to enter **Visual-Block Mode**.
+This mode is entered by pressing *v* for *Visual Mode* or *<ctrl>-v* to enter *Visual-Block Mode*.
 
 #### Saving and Exiting
 
 ***Saving***
 
 Command | Function
---------|---------
-:w			|Save
-:wq / :x	|Save and close file
-ZZ			|Save and quit
+--------|----------
+:w		|Save
+:wq / :x|Save and close file
+ZZ		|Save and quit
 
 ***Exiting***
 
 Command | Function
 --------|---------
 :qa		|Close all files
-:qa!		|Close all files, abandon changes
-:q			|Close file
+:qa!	|Close all files, abandon changes
+:q		|Close file
 :q!		|Close file, abandon changes
-ZQ			|		Quit without checking changes
+ZQ		|		Quit without checking changes
 
 ### Buffers
 
