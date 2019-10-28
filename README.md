@@ -10,49 +10,62 @@ This guide is a work-in-progress and I will be adding to it over time.
 
 ## Table of Contents
 
+1. [VIM Basic For New Users](#vim-basic-for-new-users)
+   1. [Modes](#modes)
+   1. [Saving and Exiting](#saving-and-exiting)
 1. [.vimrc Magic](#vimrc-magic)
 1. [Buffers](#buffers)
    1. [Basics](#basics)
    1. [Delete Buffers](#delete-buffers)
    1. [Delete Other Buffers](#delete-other-buffers)
 
-### .vimrc Magic
+### VIM Basic For New Users
 
-***Change Detection***
+#### Modes
 
-Check if file has been changed externally and reload into buffer:
+***Normal/Command Mode***
 
-`au FocusGained,BufEnter * :silent! checktime`
+This the default mode when opening Vim. Vim keyboard commands can be used in this mode to perform various tasks.
 
-***Auto-Save***
+You can return to *Normal* mode from other modes simple by pressing the *<ESC>* key.
 
-Auto-save on window focus is lost:
+***Command Line Mode***
 
-`au FocusLost,WinLeave * :silent! w`
+Whenever you see instructions that supply a Vim comment that starts with *:* the you are working with a command line mode function.
 
-***Mouse Functionality***
+Simply pressing *:* will enter you into *Command Line* mode, and information enter after it is the commant.
 
-Enable mouse interactivity:
+***Insert Mode***
 
-`set mouse=a`
+This mode is where files are modified.
 
-The mouse can be enabled for different modes:
+To enter *Insert Mode* press *i* or *<Insert>*.
 
-Value|description
------|------------
-n    |Normal mode and Terminal modes
-v    |Visual mode
-i    |Insert mode
-c    |Command-line mode
-h    |all previous modes when editing a help file
-a    |all previous modes
-r    |for hit-enter and more-prompt prompt
+***Visual Mode***
 
-***Pane Size Constraint***
+This mode enables the ability to select lines and blocks of text.
 
-Automatically resize panes proportionately when terminal window size changes:
+This mode is entered by pressing *v* for *Visual Mode* or *<ctrl>-v* to enter *Visual-Block Mode*.
 
-`au VimResized * wincmd =`
+#### Saving and Exiting
+
+***Saving***
+
+Command | Function
+------------------
+:w		|Save
+:wq / :x|Save and close file
+ZZ		|Save and quit
+
+***Exiting***
+
+Command | Function
+--------|---------
+:qa		|Close all files
+:qa!	|Close all files, abandon changes
+:q		|Close file
+:q!		|Close file, abandon changes
+ZQ		|		Quit without checking changes
 
 ### Buffers
 
@@ -66,17 +79,17 @@ Use the following command to list all buffers.
 
 Example Output of `:buffers`:
 
-    1 #a   "MyFile.txt"                   line 5
-    3 %a   "Some_Other_File.txt"          line 1
-    4 #  + "~/.vimrc"                     line 28
-    5  a   "~/plain_text_passwords.lol"   line 7
+    1 #a   "MyFile.txt"                   line 5
+    3 %a   "Some_Other_File.txt"          line 1
+    4 #  + "~/.vimrc"                     line 28
+    5  a   "~/plain_text_passwords.lol"   line 7
 
 * Column 1
   * Buffer number.
 * Column 2
   * The current buffer is marked by `%`.
   * An alternate buffer will be marked with `#`.
-  * Active buffers, or buffers that are displayed on screen, will be marked with an `a`.  
+  * Active buffers, or buffers that are displayed on screen, will be marked with an `a`.
 * Column 3
   * This column will display a `+` if there are any unwritten changes in that buffer.
 * Column 4
@@ -114,3 +127,43 @@ Alternative, start typing the name of the file in the target buffer and use tab 
 To delete multiple buffers at once, append an "!" to the end of the `:bd` command:
 
 `:bd! <buffer 1> <buffer 2> ...`
+
+### Advanced
+
+#### .vimrc Magic
+
+***Change Detection***
+
+Check if file has been changed externally and reload into buffer:
+
+`au FocusGained,BufEnter * :silent! checktime`
+
+***Auto-Save***
+
+Auto-save on window focus is lost:
+
+`au FocusLost,WinLeave * :silent! w`
+
+***Mouse Functionality***
+
+Enable mouse interactivity:
+
+`set mouse=a`
+
+The mouse can be enabled for different modes:
+
+Value|description
+-----|------------
+n    |Normal mode and Terminal modes
+v    |Visual mode
+i    |Insert mode
+c    |Command-line mode
+h    |all previous modes when editing a help file
+a    |all previous modes
+r    |for hit-enter and more-prompt prompt
+
+***Pane Size Constraint***
+
+Automatically resize panes proportionately when terminal window size changes:
+
+`au VimResized * wincmd =`
